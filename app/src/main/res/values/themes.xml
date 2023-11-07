@@ -4,6 +4,7 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/status_bar_color</item>
+<!--        <item name="android:windowFullscreen">true</item>-->
     </style>
 
     <style name="Theme.SmartPark" parent="Base.Theme.SmartPark" />
