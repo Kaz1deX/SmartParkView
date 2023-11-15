@@ -1,23 +1,21 @@
-package com.example.smartpark
+package com.example.smartpark.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.view.Window
-import android.view.WindowManager
 import androidx.lifecycle.lifecycleScope
+import com.example.smartpark.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.splash_screen)
 
         lifecycleScope.launch {
             delay(2000)
-            startActivity(Intent(this@MainActivity, MainActivity2::class.java))
+            startActivity(Intent(this@SplashScreen, MainActivity::class.java))
             finish()
         }
     }
