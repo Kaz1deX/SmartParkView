@@ -1,10 +1,12 @@
-package com.example.smartpark.ui
+package com.example.smartpark.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import com.example.smartpark.R
 import com.example.smartpark.databinding.FragmentMapBinding
 
 class MapFragment : Fragment() {
